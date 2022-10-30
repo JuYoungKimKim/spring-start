@@ -2,9 +2,7 @@ package com.example.hellospring.service;
 
 import com.example.hellospring.domain.Member;
 import com.example.hellospring.repository.MemberRepository;
-import com.example.hellospring.repository.MemoryMemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,6 +11,7 @@ import java.util.Optional;
 // 그리고 이녀석을 사용하는 곧에 @Autowired를 사용하면 이 service를 사용하는 곳에서 요녀석을 사용할 수 있게 되는것이다.
 //@Service
 
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
