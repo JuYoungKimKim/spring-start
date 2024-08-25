@@ -28,10 +28,9 @@ public class helloController {
     @GetMapping("hello-spring")
     @ResponseBody
     public String helloString(@RequestParam("name") String name){
-        return "hello" + name;
+        return "hello1" + name;
     }
-
-
+    // q바보
 
     // ResponseBody 에 객체를 전달하면
     // Json 으로 변환되어서 client 에게 전달된다.
