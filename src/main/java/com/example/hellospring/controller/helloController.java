@@ -30,7 +30,7 @@ public class helloController {
     public String helloString(@RequestParam("name") String name){
         return "hello1" + name;
     }
-    // ㅣㄹㅇㄴ린ㅇ라
+    // ㅣㄹㅇㄴ린ㅇ라1111
 
     // ResponseBody 에 객체를 전달하면
     // Json 으로 변환되어서 client 에게 전달된다.
